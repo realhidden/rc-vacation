@@ -9,8 +9,8 @@
 
 if (window.rcmail) {
 	rcmail.addEventListener('init', function(evt) {
-		var tab = $('<span>').attr('id', 'settingstabpluginvacation').addClass(
-				'tablink');
+		var tab = $('<li>').attr('id', 'settingstabpluginvacation').addClass(
+				'listitem vacation');
 		var button = $('<a>').attr('href',
 				rcmail.env.comm_path + '&_action=plugin.vacation').html(
 				rcmail.gettext('vacation', 'vacation')).appendTo(tab);
